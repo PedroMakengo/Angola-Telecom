@@ -1,0 +1,92 @@
+/* Negrito */
+.negrito {
+  font-weight: bold;
+}
+/* Menu */
+.main-menu .nav-link {
+  font-weight: bold !important;
+}
+/* Body */
+body {
+  background: #f5f5f5 !important;
+}
+/* Cores */
+.cor-cinza {
+  color: #d6d6d6;
+}
+.text-primario {
+  color: #0960aa;
+}
+/* Bgs */
+.bg-primario {
+  background: #0960aa !important;
+}
+.bg-primario-leve {
+  background: #32dbc6;
+}
+/* Gradientes */
+.bg-gradiente-1 {
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(#32dbc7),
+    to(#0960aa)
+  ) !important;
+}
+
+/* Fundo */
+.banner {
+  height: 700px;
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(
+      linear,
+      right top,
+      left bottom,
+      from(#00000071),
+      to(#00000071)
+    ),
+    url(../img/BANNER_FALEMAIS.jpg);
+  background-attachment: fixed;
+}
+.banner .content {
+  position: relative;
+  top: 320px;
+  height: 220px;
+  background: rgba(0, 0, 0, 0.582) !important;
+}
+
+/* Banner Promocional */
+.banner-promocional {
+  height: 450px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(
+      linear,
+      right top,
+      left bottom,
+      from(#00000071),
+      to(#00000071)
+    ),
+    url(../img/fundo.jpg);
+}
+
+/* Anuncios */
+.anuncios {
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: -webkit-gradient(
+      linear,
+      right top,
+      left bottom,
+      from(#000000c9),
+      to(#000000c9)
+    ),
+    url(../img/fibra.jpg);
+}
