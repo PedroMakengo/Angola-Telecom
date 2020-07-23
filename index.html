@@ -32,8 +32,20 @@
 
     <!-- My style -->
     <link rel="stylesheet" href="assets/css/demo.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
     <!-- <link rel="icon" type="image/png" href="assets/img/logo/logo.png" sizes="32x32">
     <link rel="icon" type="image/png" href="assets/img/logo/logo.png" sizes="16x16"> -->
     <!-- End My Style -->
@@ -72,10 +84,10 @@
             </div>
             <div class="col-md-6">
               <ul class="social-media">
-                <li>
-                  <a href="#" class="p-2">
+                <li class="ml-4 text-right">
+                  <a href="#" class="ml-4">
                     <img
-                      src="assets/img/ao.png"
+                      src="assets/img/bandeiras/ao.png"
                       alt=""
                       title="Português"
                       style="width: 40%;"
@@ -85,7 +97,7 @@
                 <li>
                   <a href="#" class="p-2">
                     <img
-                      src="assets/img/uk.png"
+                      src="assets/img/bandeiras/uk.png"
                       alt=""
                       title="Inglês"
                       style="width: 40%;"
@@ -106,9 +118,8 @@
           <div class="row align-items-center">
             <div class="col-11 col-xl-2">
               <h1 class="mb-0 site-logo">
-                <a href="index.html" class="text-black h2 mb-0"
-                  >
-                    <img src="assets/img/logo/logo.png" alt="">
+                <a href="index.html" class="text-black h2 mb-0">
+                  <img src="assets/img/logo/logo.png" alt="" />
                 </a>
               </h1>
             </div>
@@ -127,10 +138,12 @@
                       >Angola Telecom</a
                     >
                     <ul class="dropdown">
-                      <li><a href="#">Sobre</a></li>
-                      <li><a href="#">Telinforma</a></li>
-                      <li><a href="#">Recrutamento</a></li>
-                      <li><a href="#">Lojas</a></li>
+                      <li><a href="pages/sobre.html">Sobre</a></li>
+                      <li><a href="pages/telinforma.html">Telinforma</a></li>
+                      <li>
+                        <a href="pages/recrutamento.html">Recrutamento</a>
+                      </li>
+                      <li><a href="pages/lojas.html">Lojas</a></li>
                     </ul>
                   </li>
 
@@ -167,53 +180,112 @@
       <!-- End Menu Principal -->
 
       <!-- Banner -->
-      <div class="banner">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="content p-4 text-white ">
-               <div class="row">
-                 <div class="col-lg-6 border-right">
-                    <h1 class="negrito">Angola Telecom</h2>
-                    <h3 class="negrito">Fala, Navega com Telecom</h4>
-                    <div class="mt-2">
-                      <a href="#" class="text-primario">Navegue,</a>
-                      <a href="#" class="text-primario">Fala e Navegue,</a>
-                      <a href="#" class="text-primario">Fala Mais</a>
-                    </div>
-                 </div>
-                 <div class="col-lg-6 text-center">
-                   <img src="assets/img/ilustracoes/undraw_connected_world_wuay.svg" alt="" class="col-lg-12" style="height: 170px">
-                 </div>
-               </div>
-              </div>
+      <div class="slide-one-item home-slider owl-carousel">
+        <div>
+          <div class="testimonial slider-photo">
+            <div class="container" style="padding-top: 300px;">
+              <div class="row"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial slider-photo-2">
+            <div class="container" style="padding-top: 300px;">
+              <div class="row"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial slider-photo">
+            <div class="container" style="padding-top: 300px;">
+              <div class="row"></div>
             </div>
           </div>
         </div>
       </div>
-      <!-- End Banner -->
+      <!-- End Carrousel -->
 
       <!-- End Section Cards -->
       <div class="section-cards mt-4 mb-4" style="height: auto;">
         <div class="container">
           <div class="row mb-4">
             <div class="col-lg-4 mt-4 text-center">
-              <div class="col-lg-12 p-4  card-mkshadow-sm bg-white" style="height: auto;">
-                  <img src="assets/img/internet.png" alt="" style="width: 100px;">
-                  <h4 class="text-uppercase negrito">Internet</h4>
-                  <span>Serviços com qualidade</span>
+              <div
+                class="col-lg-12 p-4 card-mkshadow-sm bg-white"
+                style="height: auto;"
+              >
+                <div
+                  class="bg-primario mb-4"
+                  style="
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    margin: 0px auto;
+                  "
+                >
+                  <img
+                    src="assets/img/svg/wi-fi (1).svg"
+                    style="width: 50%;"
+                    alt=""
+                    class="mt-3"
+                  />
+                </div>
+                <h4 class="text-uppercase negrito">Internet</h4>
+                <span>Serviços com qualidade</span>
               </div>
             </div>
-            <div class="col-lg-4  text-center" style="margin-top: 70px !important;">
-              <div class="col-lg-12 p-4 card-mkshadow-sm bg-white" style="height: auto;">
-                <img src="assets/img/speaker.png" alt="" style="width: 100px;">
+            <div
+              class="col-lg-4 text-center"
+              style="margin-top: 70px !important;"
+            >
+              <div
+                class="col-lg-12 p-4 card-mkshadow-sm bg-white"
+                style="height: auto;"
+              >
+                <div
+                  class="bg-primario mb-4"
+                  style="
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    margin: 0px auto;
+                  "
+                >
+                  <img
+                    src="assets/img/svg/telefone.svg"
+                    alt=""
+                    style="width: 50%;"
+                    class="mt-3"
+                  />
+                </div>
                 <h4 class="text-uppercase negrito">Voz</h4>
                 <span>Serviços com qualidade</span>
               </div>
             </div>
-            <div class="col-lg-4 text-center" style="margin-top: 120px !important;">
-              <div class="col-lg-12 p-4 card-mk shadow-sm bg-white" style="height: auto;">
-                <img src="assets/img/phone.png" alt="" style="width: 100px;">
+            <div
+              class="col-lg-4 text-center"
+              style="margin-top: 120px !important;"
+            >
+              <div
+                class="col-lg-12 p-4 card-mk shadow-sm bg-white"
+                style="height: auto;"
+              >
+                <div
+                  class="bg-primario mb-4"
+                  style="
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    margin: 0px auto;
+                  "
+                >
+                  <img
+                    src="assets/img/svg/roteador-wi-fi (1).svg"
+                    style="width: 50%;"
+                    class="mt-3"
+                    alt=""
+                  />
+                </div>
                 <h4 class="text-uppercase negrito">Equipamentos</h4>
                 <span>Serviços com qualidade</span>
               </div>
@@ -227,11 +299,17 @@
       <div class="banner-promocional mb-4">
         <div class="container">
           <div class="row">
-              <div class="col-lg-12">
-               <div class="content-promocional text-white" style="margin-top: 100px">
-                <h2 class="text-uppercase negrito"><i class="fa fa-check-circle"></i> Mais de 20 anos <br>no segmento de telecomunicações.</h2>
-               </div>
+            <div class="col-lg-12">
+              <div
+                class="content-promocional text-white"
+                style="margin-top: 100px;"
+              >
+                <h2 class="text-uppercase negrito">
+                  <i class="fa fa-check-circle"></i> Mais de 20 anos <br />no
+                  segmento de telecomunicações.
+                </h2>
               </div>
+            </div>
           </div>
           <div class="row mt-4 text-white">
             <div class="col-lg-3">
@@ -260,84 +338,164 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <h3 class="text-uppercase  negrito">Nossos Produtos</h2>
+              <h3 class="text-uppercase negrito">Nossos Produtos</h3>
             </div>
 
             <div class="col-lg-4 mt-4">
-              <div class="col-lg-12 produtos p-4" style="background-image: -webkit-gradient(
-                linear,
-                right top,
-                left bottom,
-                from(#00000071),
-                to(#00000071)
-              ), url(assets/img/produtos/MAX-216M1.jpg); background-size: 60%; background-position: center; height: 200px;">
-                <span class="text-uppercase btn btn-primary border-0 text-white bg-primario roudend-0" style="border-radius: 0px !important;">Fale e Navegue</span>
+              <div
+                class="col-lg-12 produtos p-4"
+                style="
+                  background-image: -webkit-gradient(
+                      linear,
+                      right top,
+                      left bottom,
+                      from(#00000071),
+                      to(#00000071)
+                    ),
+                    url(assets/img/produtos/p1.jpg);
+                  background-size: 80%;
+                  background-position: center;
+                  height: 200px;
+                "
+              >
+                <span
+                  class="text-uppercase btn btn-primary border-0 text-white bg-primario roudend-0"
+                  style="border-radius: 0px !important;"
+                  >Fale e Navegue</span
+                >
               </div>
             </div>
             <div class="col-lg-4 mt-4">
-              <div class="col-lg-12 produtos p-4" style="background-image: -webkit-gradient(
-                linear,
-                right top,
-                left bottom,
-                from(#00000071),
-                to(#00000071)
-              ), url(assets/img/produtos/ETS-2055.jpg); background-size: 60%; background-position: center; height: 200px;">
-                <span class="text-uppercase btn btn-primary border-0 text-white bg-primario roudend-0" style="border-radius: 0px !important;">Fale Mais</span>
+              <div
+                class="col-lg-12 produtos p-4"
+                style="
+                  background-image: -webkit-gradient(
+                      linear,
+                      right top,
+                      left bottom,
+                      from(#00000071),
+                      to(#00000071)
+                    ),
+                    url(assets/img/produtos/p2.jpg);
+                  background-size: 100% 100%;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  height: 200px;
+                "
+              >
+                <span
+                  class="text-uppercase btn btn-primary border-0 text-white bg-primario roudend-0"
+                  style="border-radius: 0px !important;"
+                  >Fale Mais</span
+                >
               </div>
             </div>
             <div class="col-lg-4 mt-4">
-              <div class="col-lg-12 produtos p-4" style="background-image: -webkit-gradient(
-                linear,
-                right top,
-                left bottom,
-                from(#00000071),
-                to(#00000071)
-              ), url(assets/img/produtos/ETS-1001.jpg); background-size: 60%; background-position: center; height: 200px;">
-                <span class="text-uppercase btn btn-primary border-0 text-white bg-primario roudend-0" style="border-radius: 0px !important;">Fale Mais</span>
+              <div
+                class="col-lg-12 produtos p-4"
+                style="
+                  background-image: -webkit-gradient(
+                      linear,
+                      right top,
+                      left bottom,
+                      from(#00000071),
+                      to(#00000071)
+                    ),
+                    url(assets/img/produtos/p3.jpg);
+                  background-size: 80%;
+                  background-position: center;
+                  height: 200px;
+                "
+              >
+                <span
+                  class="text-uppercase btn btn-primary border-0 text-white bg-primario roudend-0"
+                  style="border-radius: 0px !important;"
+                  >Fale Mais</span
+                >
               </div>
             </div>
-
           </div>
         </div>
       </div>
       <!-- End Nossos Produtos -->
 
       <!-- Noticias -->
-      <div class="bg-white mt-4  pt-4 pb-4">
+      <div class="bg-white mt-4 pt-4 pb-4">
         <div class="container">
           <div class="row">
-              <div class="col-lg-12">
-                <h3 class="text-uppercase  negrito">Notícias em destaques</h2>
-              </div> 
+            <div class="col-lg-12">
+              <h3 class="text-uppercase negrito">Notícias em destaques</h3>
+            </div>
           </div>
 
           <div class="row mb-4">
             <div class="col-lg-4 mt-4">
-              <div class="col-lg-12 produtos card" style="padding: 0px !important">
-                <img src="assets/img/noticias/Adriano.jpg" alt="" style="width: 100%; height: 250px">
+              <div
+                class="col-lg-12 produtos card"
+                style="padding: 0px !important;"
+              >
+                <img
+                  src="assets/img/noticias/Adriano.jpg"
+                  alt=""
+                  style="width: 100%; height: 250px;"
+                />
                 <div class="p-4 mt-2">
                   <h5 class="negrito">Fale e Navegue no Bailundo</h5>
-                  <a href="#" class="text-primario"><p>Os clientes da Angola Telecom, no município do Bailundo, província do Huambo, vão beneficiar, brevemente, de mais um produto (Fale e Navegue). </p></a>
+                  <a href="#" class="text-primario"
+                    ><p>
+                      Os clientes da Angola Telecom, no município do Bailundo,
+                      província do Huambo, vão beneficiar, brevemente, de mais
+                      um produto (Fale e Navegue).
+                    </p></a
+                  >
                   <small class="cor-cinza">17/07/2020</small>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 mt-4">
-              <div class="col-lg-12 produtos card" style="padding: 0px !important">
-                <img src="assets/img/noticias/Euclides da Lomba e Patrícia Faria.jpg" alt="" style="width: 100%; height: 250px">
+              <div
+                class="col-lg-12 produtos card"
+                style="padding: 0px !important;"
+              >
+                <img
+                  src="assets/img/noticias/Euclides.jpg"
+                  alt=""
+                  style="width: 100%; height: 250px;"
+                />
                 <div class="p-4 mt-2">
-                  <h5 class="negrito">Live Solidário patrocinado pela Angola Telecom</h5>
-                  <a href="#" class="text-primario">  <p>Os músicos Landrick, Euclides da Lomba e Patrícia Faria, proporcionaram momentos de boa música.</p></a>
+                  <h5 class="negrito">
+                    Live Solidário patrocinado pela Angola Telecom
+                  </h5>
+                  <a href="#" class="text-primario">
+                    <p>
+                      Os músicos Landrick, Euclides da Lomba e Patrícia Faria,
+                      proporcionaram momentos de boa música.
+                    </p></a
+                  >
                   <small class="cor-cinza">17/07/2020</small>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 mt-4">
-              <div class="col-lg-12 produtos card" style="padding: 0px !important">
-                <img src="assets/img/noticias/huila.jpg" alt="" style="width: 100%; height: 250px">
+              <div
+                class="col-lg-12 produtos card"
+                style="padding: 0px !important;"
+              >
+                <img
+                  src="assets/img/noticias/huila.jpg"
+                  alt=""
+                  style="width: 100%; height: 250px;"
+                />
                 <div class="p-4 mt-2">
-                  <h5 class="negrito">DP Huíla na 3ª conferência de ciências da computação</h5>
-                  <a href="#" class="text-primario"> <p>Em alusão ao dia internacional das telecomunicações, a Direcção Provincial da Angola Telecom na Huíla.</p></a>
+                  <h5 class="negrito">
+                    DP Huíla na 3ª conferência de ciências da computação
+                  </h5>
+                  <a href="#" class="text-primario">
+                    <p>
+                      Em alusão ao dia internacional das telecomunicações, a
+                      Direcção Provincial da Angola Telecom na Huíla.
+                    </p></a
+                  >
                   <small class="cor-cinza">17/07/2020</small>
                 </div>
               </div>
@@ -348,7 +506,7 @@
       <!-- End Noticias -->
 
       <!-- Anuncios ou Banners Publicitários -->
-      <div class="anuncios  pb-4">
+      <div class="anuncios pb-4">
         <div class="container">
           <div class="row mb-4">
             <!-- Aqui vai ser slider show -->
@@ -357,39 +515,104 @@
                 <div class="row mt-4">
                   <div class="col-lg-6 border-right">
                     <h2 class="text-uppercase negrito">Equipamentos</h2>
-                    <p>Já temos alguns equipamentos disponíveis para si </p>
-                    <a href="#" class="btn btn-primary text-white bg-primario border-0" style="border-radius: 0px;">Mais Equipamentos</a>
+                    <p>Já temos alguns equipamentos disponíveis para si</p>
+                    <a
+                      href="#"
+                      class="btn btn-primary text-white bg-primario border-0"
+                      style="border-radius: 0px;"
+                      >Mais Equipamentos</a
+                    >
                   </div>
                   <div class="col-lg-6 text-right">
                     <div class="row">
                       <div class="col-lg-6">
-                        <div class="col-lg-12 border p-4 text-center" style="height: auto;">
-                          <img src="assets/img/equipamentos/phone-office.png" alt="" class="col-lg-12 mb-2" style="width: 90px"><br>
-                          <span class="negrito">18.000 KZ <sup><s>21.000kz</s></sup></span>
-                          <h6 class="btn btn-primary bg-primario text-white roudend-0 mt-2" style="border-radius:0px !important">Telefone Fixo Móvel</h6>
+                        <div
+                          class="col-lg-12 border p-4 text-center"
+                          style="height: auto;"
+                        >
+                          <img
+                            src="assets/img/svg/equi-1.svg"
+                            alt=""
+                            class="col-lg-12 mb-2"
+                            style="width: 90px;"
+                          /><br />
+                          <span class="negrito"
+                            >18.000 KZ <sup><s>21.000kz</s></sup></span
+                          >
+                          <h6
+                            class="btn btn-primary bg-primario text-white roudend-0 mt-2"
+                            style="border-radius: 0px !important;"
+                          >
+                            Internet
+                          </h6>
                         </div>
                       </div>
                       <div class="col-lg-6">
-                        <div class="col-lg-12 text-center border p-4" style="height: auto;">
-                          <img src="assets/img/equipamentos/phone-office.png" alt="" class="col-lg-12 mb-2" style="width: 90px"><br>
-                          <span class="negrito">18.000 KZ <sup><s>21.000kz</s></sup></span>
-                          <h6 class="btn btn-primary bg-primario text-white roudend-0 mt-2" style="border-radius:0px !important">Telefone Fixo Móvel</h6>
+                        <div
+                          class="col-lg-12 text-center border p-4"
+                          style="height: auto;"
+                        >
+                          <img
+                            src="assets/img/svg/equi-2.svg"
+                            alt=""
+                            class="col-lg-12 mb-2"
+                            style="width: 90px;"
+                          /><br />
+                          <span class="negrito"
+                            >18.000 KZ <sup><s>21.000kz</s></sup></span
+                          >
+                          <h6
+                            class="btn btn-primary bg-primario text-white roudend-0 mt-2"
+                            style="border-radius: 0px !important;"
+                          >
+                            Telefone Fixo Móvel
+                          </h6>
                         </div>
                       </div>
                     </div>
                     <div class="row mt-4">
                       <div class="col-lg-6">
-                        <div class="col-lg-12 text-center border p-4" style="height: auto;">
-                          <img src="assets/img/equipamentos/phone-office.png" alt="" class="col-lg-12 mb-2" style="width: 90px"><br>
-                          <span class="negrito">18.000 KZ <sup><s>21.000kz</s></sup></span>
-                          <h6 class="btn btn-primary bg-primario text-white roudend-0 mt-2" style="border-radius:0px !important">Telefone Fixo Móvel</h6>
+                        <div
+                          class="col-lg-12 text-center border p-4"
+                          style="height: auto;"
+                        >
+                          <img
+                            src="assets/img/svg/equi-3.svg"
+                            alt=""
+                            class="col-lg-12 mb-2"
+                            style="width: 90px;"
+                          /><br />
+                          <span class="negrito"
+                            >18.000 KZ <sup><s>21.000kz</s></sup></span
+                          >
+                          <h6
+                            class="btn btn-primary bg-primario text-white roudend-0 mt-2"
+                            style="border-radius: 0px !important;"
+                          >
+                            Telefone Fixo Móvel
+                          </h6>
                         </div>
                       </div>
                       <div class="col-lg-6">
-                        <div class="col-lg-12 text-center border p-4" style="height: auto;">
-                          <img src="assets/img/equipamentos/phone-office.png" alt="" class="col-lg-12 mb-2" style="width: 90px"><br>
-                          <span class="negrito">18.000 KZ <sup><s>21.000kz</s></sup></span>
-                          <h6 class="btn btn-primary bg-primario text-white roudend-0 mt-2" style="border-radius:0px !important">Telefone Fixo Móvel</h6>
+                        <div
+                          class="col-lg-12 text-center border p-4"
+                          style="height: auto;"
+                        >
+                          <img
+                            src="assets/img/svg/equi-2.svg"
+                            alt=""
+                            class="col-lg-12 mb-2"
+                            style="width: 90px;"
+                          /><br />
+                          <span class="negrito"
+                            >18.000 KZ <sup><s>21.000kz</s></sup></span
+                          >
+                          <h6
+                            class="btn btn-primary bg-primario text-white roudend-0 mt-2"
+                            style="border-radius: 0px !important;"
+                          >
+                            Telefone Fixo Móvel
+                          </h6>
                         </div>
                       </div>
                     </div>
@@ -406,57 +629,103 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <h3 class="text-uppercase  negrito">Segmentos Residenciais</h2>
-            </div> 
-
-            <div class="col-lg-6 mt-4">
-              <img src="assets/img/segmentos/segmento-1.jpg" alt="" style="width: 100%;">
+              <h3 class="text-uppercase negrito">
+                Conheça os nossos segmentos
+              </h3>
             </div>
-            <div class="col-lg-6 mt-4">
-              <img src="assets/img/segmentos/segmento-2.jpg" alt="" style="width: 100%;">
+          </div>
+          <div class="row" id="segundo_segmento">
+            <div class="col-lg-4 mt-4">
+              <img
+                src="assets/img/segmentos/segmento-3.jpg"
+                alt=""
+                style="width: 100%;"
+              />
+            </div>
+            <div class="col-lg-4 mt-4">
+              <img
+                src="assets/img/segmentos/segmento-4.jpg"
+                alt=""
+                style="width: 100%;"
+              />
+            </div>
+            <div class="col-lg-4 mt-4">
+              <img
+                src="assets/img/segmentos/segmento-5.jpg"
+                alt=""
+                style="width: 100%;"
+              />
             </div>
           </div>
         </div>
       </div>
       <!-- Nossos Parceiros -->
-      <div class="parceiros bg-white pb-4  pt-4 mb-4" style="height: 250px;">
+      <div class="parceiros bg-white pb-4 pt-4 mb-4" style="height: 250px;">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <h3 class="text-uppercase  negrito">Parceiros</h2>
-            </div> 
+              <h3 class="text-uppercase negrito">Parceiros</h3>
+            </div>
             <!-- Também vai ser um slider -->
             <div class="row mt-4">
-                <div class="col-lg-3">
-                  <img src="assets/img/logo/governo-de-angola.png" class="col-lg-12" alt="" style="width: 100%; height: 80px">
-                </div>
-                <div class="col-lg-3">
-                  <img src="assets/img/logo/mtti.png" class="col-lg-12" alt=""  style="width: 100%; height: 80px">
-                </div>
-                <div class="col-lg-3">
-                  <img src="assets/img/logo/zap.png" class="col-lg-12" alt=""  style="width: 100%; height: 80px">
-                </div>
-                <div class="col-lg-3">
-                  <img src="assets/img/logo/mstelecom.png" class="col-lg-12" alt=""  style="width: 100%; height: 80px">
-                </div>
-               
+              <div class="col-lg-3">
+                <img
+                  src="assets/img/logo/governo-de-angola.png"
+                  class="col-lg-12"
+                  alt=""
+                  style="width: 100%; height: 80px;"
+                />
+              </div>
+              <div class="col-lg-3">
+                <img
+                  src="assets/img/logo/mtti.png"
+                  class="col-lg-12"
+                  alt=""
+                  style="width: 100%; height: 80px;"
+                />
+              </div>
+              <div class="col-lg-3">
+                <img
+                  src="assets/img/logo/zap.png"
+                  class="col-lg-12"
+                  alt=""
+                  style="width: 100%; height: 80px;"
+                />
+              </div>
+              <div class="col-lg-3">
+                <img
+                  src="assets/img/logo/mstelecom.png"
+                  class="col-lg-12"
+                  alt=""
+                  style="width: 100%; height: 80px;"
+                />
+              </div>
             </div>
             <!-- End Slider -->
           </div>
         </div>
       </div>
       <!-- End Parceiros -->
-    
+
       <!-- Localização -->
       <div class="localizacao mt-4 pb-4 pt-4">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 mb-4">
-              <h2 class="text-uppercase  negrito">Mapa do Site</h2>
+              <h2 class="text-uppercase negrito">Mapa do Site</h2>
             </div>
             <div class="col-lg-12">
               <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63080.28578597053!2d13.205468937890322!3d-8.83128172496379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f39bd428607b%3A0x1cafbf8158802a89!2sAngola%20Telecom!5e0!3m2!1spt-PT!2sao!4v1595418272337!5m2!1spt-PT!2sao" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63080.28578597053!2d13.205468937890322!3d-8.83128172496379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f39bd428607b%3A0x1cafbf8158802a89!2sAngola%20Telecom!5e0!3m2!1spt-PT!2sao!4v1595418272337!5m2!1spt-PT!2sao"
+                  width="100%"
+                  height="450"
+                  frameborder="0"
+                  style="border: 0;"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -510,26 +779,27 @@
               </div>
             </div>
           </div>
-          <div class="row border-top ">
+          <div class="row border-top">
             <div class="col-md-3">
-              <div class=" pt-4">
+              <div class="pt-4">
                 <p>
                   Copyright &copy;
                   <script>
                     document.write(new Date().getFullYear());
-                  </script> por <br>
+                  </script>
+                  por <br />
                   <a href="#" target="_blank">Codebehind</a>
                 </p>
               </div>
             </div>
             <div class="col-md-3 mt-4">
-                <a href="#"><i></i>angolatelecom@.com</a><br>
-                <a href="#"><i></i>+244 888 000</a>
+              <a href="#"><i></i>angolatelecom@.com</a><br />
+              <a href="#"><i></i>+244 888 000</a>
             </div>
             <div class="col-md-3 mt-4">
-              <a href="#"><i></i>Luanda, Angola</a><br>
+              <a href="#"><i></i>Luanda, Angola</a><br />
               <a href="#"><i></i>Luanda</a>
-          </div>
+            </div>
           </div>
         </div>
       </footer>
@@ -539,6 +809,7 @@
 
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -552,6 +823,7 @@
     <script src="assets/js/jquery.sticky.js"></script>
 
     <script src="assets/js/typed.js"></script>
+    <script src="assets/js/demo.js"></script>
     <script>
       var typed = new Typed(".typed-words", {
         strings: ["Web Apps", " WordPress", " Mobile Apps"],
@@ -561,6 +833,17 @@
         startDelay: 1000,
         loop: true,
         showCursor: true,
+      });
+      // Carousel
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
       });
     </script>
 
