@@ -21,6 +21,12 @@ body {
 .container {
   width: 70%;
 }
+
+@media(max-width: 770px) {
+  .container {
+    width: 90%;
+  }
+}
 /* Negrito */
 .negrito {
   font-weight: bold;
