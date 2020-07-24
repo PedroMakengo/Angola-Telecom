@@ -24,7 +24,7 @@ body {
 
 @media(max-width: 770px) {
   .container {
-    width: 90%;
+    width: 90% !important;
   }
 }
 /* Negrito */
