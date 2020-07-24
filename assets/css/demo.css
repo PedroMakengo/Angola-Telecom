@@ -1,19 +1,46 @@
-/* Importando */
-@import url(../fonts/flaticon-2/flaticon.css);
-@import url(../fonts/icones/flaticon.css);
+/*!
+ * Demo v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2020-2021 The Demo
+ * Licensed under MIT (https://github.com/PedroMakengo)
+ */
 
-/* Negrito */
-.negrito {
-  font-weight: bold;
-}
-/* Menu */
-.main-menu .nav-link {
-  font-weight: bold !important;
-}
 /* Body */
 body {
   background: #f5f5f5 !important;
 }
+
+/* =================================== SELECTORES UNIVERSAIS =================================== */
+/*!
+ * Aqui eu tenho todos os selectores personalizados que pertencem aplicação
+ * Aplicação : Angola Telecom 
+ * Desenvolvedor : Pedro Makengo
+ * Empresa : Codebenhid
+ */
+ 
+ /* Container */
+.container {
+  width: 70%;
+}
+/* Negrito */
+.negrito {
+  font-weight: bold;
+}
+
+/* Menu */
+.main-menu .nav-link {
+  font-weight: bold !important;
+}
+#home-section {
+  border: 0px !important;
+}
+.top-bar .social-media img {
+  width: 40%;
+}
+.site-navbar .position-and-top {
+  position: relative; 
+  top: 3px;
+}
+
 /* Cores */
 .cor-cinza {
   color: #d6d6d6;
@@ -21,8 +48,8 @@ body {
 .text-primario {
   color: #0960aa;
 }
-/* Bgs */
 
+/* Backrgounds */
 .bg-cinza {
   background: #f2eded !important;
 }
@@ -32,6 +59,7 @@ body {
 .bg-primario-leve {
   background: #32dbc6;
 }
+
 /* Gradientes */
 .bg-gradiente-1 {
   background: -webkit-gradient(
@@ -43,6 +71,49 @@ body {
   ) !important;
 }
 
+/* Cards */
+.card-mk {
+  border-top: 4px solid #0960aa !important;
+  border-radius: 0px !important;
+}
+
+/* Margens */
+.mt-10 {margin-top: 10px}
+.mt-20 {margin-top: 20px}
+.mt-30 {margin-top: 30px}
+.mt-40 {margin-top: 40px}
+.mt-50 {margin-top: 50px}
+.mt-60 {margin-top: 60px}
+.mt-70 {margin-top: 70px}
+.mt-100 {margin-top: 100px}
+.mt-120 {margin-top: 120px}
+.mt-150 {margin-top: 150px;}
+
+/* Padding */
+.pb-60 {
+  padding-bottom: 60px !important;
+}
+
+
+/* Border */
+.border-0 , .roudend-0{
+  border-radius: 0px !important;
+}
+
+/* =================================== END SELECTORES UNIVERSAIS =================================== */
+
+
+
+
+
+/* =================================== SELECTORES DA PÁGINA INÍCIO ===================================  */
+/*!
+ * Aqui eu tenho todos os selectores personalizados da página index.html
+ * Aplicação : Angola Telecom 
+ * Página sendo estilizado : Index.html
+ * Desenvolvedor : Pedro Makengo
+ * Empresa : Codebenhid
+ */
 /* Carousel */
 .lide-one-item {
   height: 700px;
@@ -57,7 +128,7 @@ body {
       from(#00000071),
       to(#00000071)
     ),
-    url(../img/banner/slider.jpg);
+    url(../img/banner/v1-1.jpg);
   background-size: 100% 90%;
   background-position: bottom;
 }
@@ -71,30 +142,54 @@ body {
       from(#00000071),
       to(#00000071)
     ),
-    url(../img/banner/slider-2.jpg);
+    url(../img/banner/v1-3.jpg);
   background-size: 100% 90%;
   background-position: bottom;
 }
-.banner {
-  height: 700px;
-  /* background-position: center; */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: -webkit-gradient(
-      linear,
-      right top,
-      left bottom,
-      from(#00000071),
-      to(#00000071)
-    ),
-    url(../img/banner/slider.jpg);
-  background-attachment: fixed;
+.content-text-slider {
+  margin-top: 300px;
+  background-color: rgba(0, 0, 0, 0.726);
+  padding: 5%;
+  border-radius: 4px;
 }
-.banner .content {
-  position: relative;
-  top: 320px;
-  height: 220px;
-  background: rgba(0, 0, 0, 0.582) !important;
+
+/* Section-Cards */
+.section-cards .card-mk .circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0px auto;
+}
+.section-cards .card-mk .circle img {
+  width: 50%;
+}
+
+/* Nossos Produtos */
+.produtos {
+  background-position: center;
+  height: 200px;
+}
+
+/* Noticias */
+.noticias .card-mk {
+  padding: 0px !important;
+} 
+.noticias .card-mk img {
+  width: 100%;
+  height: 250px;
+}
+
+
+/* Nossos segmentos */
+#segundo_segmento img {
+  width: 100%;
+}
+
+
+/* Parceiros */
+.parceiros img {
+  width: 100%; 
+  height: 80px;
 }
 
 /* Banner Promocional */
@@ -103,6 +198,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-image: -webkit-gradient(
       linear,
       right top,
@@ -119,7 +215,6 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-image: -webkit-gradient(
       linear,
       right top,
