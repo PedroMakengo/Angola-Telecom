@@ -40,9 +40,6 @@ body {
 }
 
 /* Menu */
-.main-menu .nav-link {
-  font-weight: bold !important;
-}
 #home-section {
   border: 0px !important;
 }
@@ -121,7 +118,10 @@ body {
   width: 10%;
   float: left;
 }
-
+/* Formulários */
+input , select , textarea {
+  border-radius: 4px !important;
+}
 /* =================================== END SELECTORES UNIVERSAIS =================================== */
 
 
