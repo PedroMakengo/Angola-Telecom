@@ -79,7 +79,7 @@
 
 
     <header class="site-navbar py-4 bg-white js-sticky-header site-navbar-target" role="banner">
-      <div class="container">
+      <div class="container ">
         <div class="row align-items-center">
           <div class="col-11 col-xl-2">
             <h1 class="mb-0 site-logo">
@@ -108,15 +108,15 @@
                 <li class="has-children">
                   <a href="#servicos-produtos" class="nav-link">Serviços e Produtos</a>
                   <ul class="dropdown">
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Produtos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="nav-link">Tarifario</a>
+                  <a href="tarifario.html" class="nav-link">Tarifario</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-link">Contactos</a>
+                  <a href="contactos.html" class="nav-link">Contactos</a>
                 </li>
               </ul>
             </nav>
@@ -130,23 +130,9 @@
     </header>
     <!-- End Menu Principal -->
 
-    <!-- Banner Telinforma -->
-    <div class="banner-telinforma text-white" style="height: 550px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="telinforma-content mt-150 p-4 text-right"
-              style="background-color: rgba(0, 0, 0, 0.705); margin-top: 340px !important;">
-              <h1>Telinforma</h1>
-              <h3>Informações mas perto de si.</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Telinforma -->
 
-    <div class="sobre-telinforma mb-4 pb-4">
+
+    <div class="sobre-telinforma mb-4 pb-4 mt-100">
       <div class="container">
         <div class="row">
           <!-- Lateral Esquerdo -->
@@ -247,9 +233,9 @@
                 </div>
               </div>
 
-              <div class="col-lg-12 mt-3">
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination">
+              <div class="text-center m-auto">
+                <nav aria-label="Page navigation example ">
+                  <ul class="pagination mt-4">
                     <li class="page-item border-0 shadow-sm">
                       <a class="page-link bg-primario" href="#" aria-label="Previous">
                         <span aria-hidden="true">
@@ -279,56 +265,41 @@
       </div>
     </div>
 
-    <!-- Imagens Relacionados a Telinformação -->
-    <div class="mt-4 pt-4 pb-4">
+    <div class="mt-4 bg-white pt-4 pb-4">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="../assets/img/banner/v1-1.jpg" class="col-lg-12" style="width: 100%; height: 200px;">
-          </div>
-          <div class="col-lg-4">
-            <img src="../assets/img/banner/v1-1.jpg" class="col-lg-12" style="width: 100%; height: 200px;">
-          </div>
-          <div class="col-lg-4">
-            <img src="../assets/img/banner/v1-1.jpg" class="col-lg-12" style="width: 100%; height: 200px;">
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Imagens Relacionados a Telinformação -->
-
-
-    <div class="mt-4 bg-white pt-4 pb-4" style="height: auto;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h4 class="text-uppercase negrito pt-2 pb-4"> Deixe o seu contributo sobre as telinformações </h4>
-          </div>
-        </div>
-        <div class="col-lg-12 border pt-4 pb-4">
+        <div class="col-lg-12 shadow-sm">
           <div class="row">
-            <div class="col-lg-4">
-              <img src="../assets/img/svg/undraw_fill_forms_yltj.svg" style="width: 100%;" alt="">
+            <div class="col-lg-4 text-white" style="background-image: -webkit-gradient(
+              linear,
+              right top,
+              left bottom,
+              from(#0000008e),
+              to(#0000008e)
+            ),url(../assets/img/banner/v1-1.jpg); background-size: cover; background-position: center;">
+              <div class="mt-150">
+                <h3 class="negrito text-uppercase">Deixe a sua opinião</h3>
+                <h5>Queremos saber de ti o que precisamos melhorar nos nossos telinformas</h5>
+              </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8  pt-4 pb-4 bg-white">
               <form action="">
-                <div class="row">
+                <div class="row p-4">
                   <div class="col-lg-6">
-                    <input type="text" class="form-control rounded-0" placeholder="Nome Completo">
+                    <input type="text" class="form-control border" placeholder="Nome Completo">
                   </div>
                   <div class="col-lg-6">
-                    <input type="tel" class="form-control rounded-0" placeholder="Telefone">
+                    <input type="tel" class="form-control border" placeholder="Telefone">
                   </div>
                   <div class="col-lg-12 mt-4">
-                    <input type="email" class="form-control rounded-0" placeholder="email@gmail.com">
+                    <input type="email" class="form-control border" placeholder="email@gmail.com">
                   </div>
                   <div class="col-lg-12 mt-4">
-                    <textarea name="" class="form-control rounded-0"
+                    <textarea name="" class="form-control border"
                       placeholder="Ajude-nos a melhor os nossos telinformas"></textarea>
                   </div>
                   <div class="col-lg-6">
-                    <input type="submit" class="form-control rounded-0 bg-primario text-white col-lg-8 mt-4"
-                      value="Enviar comentário">
+                    <input type="submit" class="form-control  bg-primario text-white col-lg-8 mt-4"
+                      value="Enviar comentário" style="border: 0px !important">
                   </div>
                 </div>
               </form>
@@ -337,8 +308,6 @@
         </div>
       </div>
     </div>
-
-
 
     <!-- Footer -->
     <footer class="site-footer">

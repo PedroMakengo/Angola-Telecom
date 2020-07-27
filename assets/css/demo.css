@@ -34,6 +34,10 @@ body {
     width: 90% !important;
   }
 }
+@media (min-width: 992px){
+.modal-lg {
+    max-width: 900px;
+}
 /* Negrito */
 .negrito {
   font-weight: bold;
@@ -258,8 +262,6 @@ input , select , textarea {
  * Desenvolvedor : Pedro Makengo
  * Empresa : Codebenhid
  */
-
-
 
  .valores .valor {
   height: 230px;
