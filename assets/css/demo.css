@@ -6,14 +6,14 @@
 
  /* Importação */
 @font-face {
-  font-family: "Angola";
+  font-family: "Angola-Telecom";
   src: url(../fonts/PT_Sans/PTSans-Regular.ttf);
 }
 
 
 /* Body */
 body {
-  font-family: "Angola";
+  font-family: "Angola-Telecom";
   background: #f5f5f5 !important;
 }
 /* =================================== SELECTORES UNIVERSAIS =================================== */
@@ -114,7 +114,8 @@ body {
 
 /* Border */
 .border-0 , .roudend-0{
-  border-radius: 0px !important;
+  border-radius: 4px !important;
+  border: 0px;
 }
 .borda-top {
   border-top: 3px solid #0960aa;
@@ -129,6 +130,11 @@ body {
 /* Formulários */
 input , select , textarea {
   border-radius: 4px !important;
+}
+select.none,
+input.none {
+  background: none !important;
+  color: white !important;
 }
 /* =================================== END SELECTORES UNIVERSAIS =================================== */
 
@@ -147,39 +153,54 @@ input , select , textarea {
 
 /* Carousel */
 .lide-one-item {
-  height: 700px;
+  height: 600px !important;
 }
 .slider-photo {
-  height: 700px !important;
+  height: 650px !important;
   width: 100% !important;
   background-image: -webkit-gradient(
       linear,
       right top,
       left bottom,
-      from(#00000071),
-      to(#00000071)
+      from(#00000017),
+      to(#00000017)
     ),
-    url(../img/banner/v1-1.jpg);
+    url(../img/banner/covid-1.jpg);
   background-size: 100% 90%;
   background-position: bottom;
 }
 .slider-photo-2 {
-  height: 700px !important;
+  height: 650px !important;
   width: 100% !important;
   background-image: -webkit-gradient(
       linear,
       right top,
       left bottom,
-      from(#00000071),
-      to(#00000071)
+      from(#00000017),
+      to(#00000017)
     ),
-    url(../img/banner/v1-3.jpg);
+    url(../img/banner/covid-2.jpg);
+  background-size: 100% 90%;
+  background-position: bottom;
+}
+.slider-photo-3 {
+  height: 650px !important;
+  width: 100% !important;
+  background-image: -webkit-gradient(
+      linear,
+      right top,
+      left bottom,
+      from(#00000017),
+      to(#00000017)
+    ),
+    url(../img/banner/covid-3.jpg);
   background-size: 100% 90%;
   background-position: bottom;
 }
 .content-text-slider {
-  margin-top: 300px;
+  margin-top: 350px;
   background-color: rgba(0, 0, 0, 0.726);
+  color: white !important;
   padding: 5%;
   border-radius: 4px;
 }
@@ -196,8 +217,10 @@ input , select , textarea {
 }
 
 /* Nossos Produtos */
+.nossos-produtos
 .produtos {
   background-position: center;
+  background-size: 80%;
   height: 200px;
 }
 
@@ -255,6 +278,9 @@ input , select , textarea {
     ),
     url(../img/fibra.jpg);
 }
+.anuncios img {
+  width: 90px;
+}
 
 
 
@@ -266,10 +292,27 @@ input , select , textarea {
  * Desenvolvedor : Pedro Makengo
  * Empresa : Codebenhid
  */
+  .banner-fundo-sobre {
+    height: 350px;
+    background-size: cover;
+  }
+  .icons-sobre {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%;
+  }
+  .icons-sobre i {
+    font-size: 25px;
+  }
+
+  .manual_angola_telecom {
+    border: 3px  dashed #4d4d4d !important
+  }
 
  .valores .valor {
   height: 230px;
  }
+
  .valor-1 {
    background-image:-webkit-gradient(
     linear,
@@ -280,6 +323,9 @@ input , select , textarea {
   ),url(../img/banner/v1-1.jpg);
    background-size: cover;
  }
+
+
+
  .estatistica-sobre {
    background-image: -webkit-gradient(
     linear,
@@ -289,6 +335,12 @@ input , select , textarea {
     to(#0960aa)
   ),url(../img/banner/v1-1.jpg);
   background-size: cover;
+ }
+ .estatistica-sobre .circle {
+  border: 3px solid #fff !important;
+  height: 100px; 
+  width: 100px; 
+  border-radius: 50%;
  }
 
 /* ========================================== END PÁGINA SOBRE ==========================================  */
