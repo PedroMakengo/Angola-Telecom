@@ -6,14 +6,14 @@
 
  /* Importação */
 @font-face {
-  font-family: "Angola-Telecom";
+  font-family: "Angola-Telecom"; 
   src: url(../fonts/PT_Sans/PTSans-Regular.ttf);
 }
 
 
 /* Body */
 body {
-  font-family: "Angola-Telecom";
+  font-family: "Angola-Telecom" !important;
   background: #f5f5f5 !important;
 }
 /* =================================== SELECTORES UNIVERSAIS =================================== */
@@ -88,7 +88,7 @@ body {
 /* Cards */
 .card-mk {
   border-top: 4px solid #0960aa !important;
-  border-radius: 0px !important;
+  border-radius: 4px !important;
 }
 
 /* Margens */
@@ -359,3 +359,21 @@ input.none {
   background-size: cover;
   background-position: center;
 }
+
+
+
+/* SERVIÇOS */
+
+.servicos .nav-link {
+  color: #000;
+}
+
+.nav-link.active {
+  color: white !important;
+  background: -webkit-gradient(linear,
+          right top,
+          left bottom,
+          from(#32dbc7),
+          to(#0960aa)) !important;
+}
+/* END SERVIÇOS */
