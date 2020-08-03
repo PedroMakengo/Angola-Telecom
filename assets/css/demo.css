@@ -10,7 +10,6 @@
   src: url(../fonts/PT_Sans/PTSans-Regular.ttf);
 }
 
-
 /* Body */
 body {
   font-family: "Angola-Telecom" !important;
@@ -165,7 +164,7 @@ input.none {
       from(#00000017),
       to(#00000017)
     ),
-    url(../img/banner/covid-1.jpg);
+    url(../img/banner/slider.jpg);
   background-size: 100% 90%;
   background-position: bottom;
 }
@@ -179,7 +178,7 @@ input.none {
       from(#00000017),
       to(#00000017)
     ),
-    url(../img/banner/covid-2.jpg);
+    url(../img/banner/slider-2.jpg);
   background-size: 100% 90%;
   background-position: bottom;
 }
