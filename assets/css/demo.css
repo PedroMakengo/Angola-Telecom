@@ -30,12 +30,8 @@ body {
 
 @media(max-width: 770px) {
   .container {
-    width: 90% !important;
+    width: 100% !important;
   }
-}
-@media (min-width: 992px){
-.modal-lg {
-    max-width: 900px;
 }
 /* Negrito */
 .negrito {
@@ -46,6 +42,7 @@ body {
 #home-section {
   border: 0px !important;
 }
+
 .top-bar .social-media img {
   width: 40%;
 }
@@ -106,6 +103,7 @@ body {
 .mt-130 {margin-top: 130px !important}
 .mt-140 {margin-top: 140px !important;}
 .mt-150 {margin-top: 150px !important;}
+.mt-200 {margin-top: 200px !important;}
 
 /* Padding */
 .pb-60 {padding-bottom: 60px !important}
@@ -196,13 +194,6 @@ input.none {
   background-size: 100% 90%;
   background-position: bottom;
 }
-.content-text-slider {
-  margin-top: 350px;
-  background-color: rgba(0, 0, 0, 0.726);
-  color: white !important;
-  padding: 5%;
-  border-radius: 4px;
-}
 
 /* Section-Cards */
 .section-cards .card-mk .circle {
@@ -232,19 +223,16 @@ input.none {
   height: 250px;
 }
 
-
 /* Nossos segmentos */
 #segundo_segmento img {
   width: 100%;
 }
-
 
 /* Parceiros */
 .parceiros img {
   width: 100%; 
   height: 80px;
 }
-
 /* Banner Promocional */
 .banner-promocional {
   height: 450px;
@@ -279,6 +267,64 @@ input.none {
 }
 .anuncios img {
   width: 90px;
+}
+
+/* Publicidades */
+.publicidade-banners .testimonial{
+  background-size: cover;height: 329px;
+}
+
+/* Publicidade Footer */
+.publicidade-footer .testimonial{
+  background-size: cover;height: 329px;
+}
+
+@media(max-width: 700px) {
+
+  /* Slider */
+  .slide-one-item {
+    margin-top: 85px !important;
+  }
+  .testimonial {
+    margin-top: 500px !important;
+    height: 300px !important;
+  }
+  /* Section Cards */
+  .section-cards .mt-70 , 
+  .section-cards .mt-120 {
+    margin-top: 30px !important;
+  }
+
+  /* Banner Promocional */
+  .banner-promocional {
+    height: auto !important;
+    padding-bottom: 100px !important;
+  }
+
+  /* Anuncios */
+  .anuncios{
+    background-size: cover;
+    height: auto;
+  }
+
+  /* Publicidade */
+  .publicidade-banners .slide-one-item {
+    margin-top: -30px !important;
+  }
+  .publicidade-banners .testimonial {
+    background-size: 100% 100% !important;
+    height: 100px !important;
+  }
+
+  /* Publicidade Footer */
+  .publicidade-footer .slide-one-item {
+    margin-top: 30px !important;
+  }
+  .publicidade-footer .testimonial {
+    background-size: 100% 100% !important;
+    height: 100px !important;
+  }
+
 }
 
 

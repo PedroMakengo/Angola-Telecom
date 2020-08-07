@@ -166,7 +166,35 @@ jQuery(document).ready(function ($) {
 			autoplay: true,
 			pauseOnHover: false,
 			nav: true,
-			navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
+			navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">'],
+		});
+		$('.parceiros-slider').owlCarousel({
+			center: false,
+			items: 1,
+			loop: true,
+			stagePadding: 0,
+			margin: 0,
+			autoplay: true,
+			pauseOnHover: false,
+			responsive: {
+				600: {
+					margin: 0,
+					nav: true,
+					items: 2
+				},
+				1000: {
+					margin: 0,
+					stagePadding: 0,
+					nav: true,
+					items: 4
+				},
+				1200: {
+					margin: 0,
+					stagePadding: 0,
+					nav: true,
+					items: 4
+				}
+			}
 		});
 	};
 	siteCarousel();
