@@ -114,6 +114,9 @@ body {
   border-radius: 4px !important;
   border: 0px;
 }
+.border-zero {
+  border: 0px;
+}
 .borda-top {
   border-top: 3px solid #0960aa;
   width: 10%;
@@ -132,6 +135,15 @@ select.none,
 input.none {
   background: none !important;
   color: white !important;
+}
+/* Active */
+.nav-link.active {
+  color: white !important;
+  background: -webkit-gradient(linear,
+    right top,
+    left bottom,
+    from(#32dbc7),
+    to(#0960aa)) !important;
 }
 /* =================================== END SELECTORES UNIVERSAIS =================================== */
 
@@ -268,19 +280,23 @@ input.none {
 .anuncios img {
   width: 90px;
 }
+.parceiros-row {
+  width: 97%;
+}
 
 /* Publicidades */
 .publicidade-banners .testimonial{
-  background-size: cover;height: 329px;
+  background-size: cover;
+  height: 329px;
 }
 
 /* Publicidade Footer */
 .publicidade-footer .testimonial{
-  background-size: cover;height: 329px;
+  background-size: cover;
+  height: 329px;
 }
 
 @media(max-width: 700px) {
-
   /* Slider */
   .slide-one-item {
     margin-top: 85px !important;
@@ -324,6 +340,18 @@ input.none {
     background-size: 100% 100% !important;
     height: 100px !important;
   }
+  .parceiros{
+    height:300px;
+    padding-bottom: 10px !important;
+  }
+  .parceiros .testimonial{
+    height: 100px;
+    padding-bottom: 0px !important;
+  }
+  .parceiros .testimonial img {
+    width: 100% !important;
+    height:150px !important;
+  }
 
 }
 
@@ -337,7 +365,7 @@ input.none {
  * Desenvolvedor : Pedro Makengo
  * Empresa : Codebenhid
  */
-  .banner-fundo-sobre {
+  .banner_fundo_sobre {
     height: 350px;
     background-size: cover;
   }
@@ -369,8 +397,6 @@ input.none {
    background-size: cover;
  }
 
-
-
  .estatistica-sobre {
    background-image: -webkit-gradient(
     linear,
@@ -387,38 +413,199 @@ input.none {
   width: 100px; 
   border-radius: 50%;
  }
+ @media (max-width: 700px) {
+  .sobre_lateral_seccao  {
+    padding: 0px !important;
+  }
+  .banner_fundo_sobre {
+    background-size: cover;
+    height: 200px;
+  }
+  .sobre_direito_seccao {
+    padding: 1.5rem !important;
+  }
+ }
+ 
 
 /* ========================================== END PÁGINA SOBRE ==========================================  */
 
 
-/* TELINFORMA */
-.banner-telinforma {
-  background-attachment: fixed;
-  background-image: -webkit-gradient(
-    linear,
-    right top,
-    left bottom,
-    from(#0000008e),
-    to(#0000008e)
-  ),url(../img/banner/v1-1.jpg);
-  background-size: cover;
-  background-position: center;
+/*  =========================================== TELINFORMA =========================================== */
+.sobre_telinforma .slide-one-item .testimonial {
+  background-size: cover;height: 190px;
 }
+.espaco_form .telinforma_form_img {
+  background-size: cover; background-position: center;
+}
+@media (max-width: 770px) {
+  .telinforma_form_img {
+    background-size: 100%;
+  }
+  .telinforma_form_input {
+    padding: 0px !important;
+  }
+  .sobre_telinforma .slide-one-item {
+    margin-top: -10px !important;
+  }
+  .sobre_telinforma .slide-one-item .testimonial {
+    background-size: 100% 100% !important;
+    height: 100px !important;
+  }
+}
+/* ============================================ END TELINFORMA ============================================*/
 
 
 
-/* SERVIÇOS */
+/*=============================================== TARIFIARIOS ===============================================*/
+.banner_tarifario {
+  height: 350px;
+}
+.banner_tarifario_img {
+  background-size: cover;
+}
+.banner_tarifario_descricao {
+  height: 350px !important;
+}
+.lista_tipos_tarifarios  .item_tarifarios a{
+  font-size: 20px !important; color: #7D7D7D
+}
+.lista_tipos_tarifarios  .item_tarifarios a i {
+  position: relative; top: 10px !important; font-size: 40px !important;
+}
+.anuncio_tarifarios {
+  height: auto;
+}
+.anuncio_tarifario_img {
+  width: 100%;
+  height: 250px !important;
+  background-size: cover;
+}
+@media (max-width: 700px) {
+  .anuncio_tarifarios {
+    padding-right: 1rem !important;
+  }
+}
+/*============================================= END TARIFIAROS =============================================*/
 
+
+
+
+/*================================================= LOJAS ================================================= */
+
+/* Slider Lojas */
+.lojas .lojas-slider .testimonial{
+  background-size: cover;
+  height: 290px;
+}
+/* Lojas Encontradas */
+.lojas-encontradas .card-mk img{
+  width: 100%; height: 200px;
+}
+.form-register {
+  padding-left: 20px;
+  background: #fff;
+}
+.form-banner-loja {
+  background-size: cover; height: auto; background-position: center;
+}
+.loja-modal-close {
+  position: absolute; 
+  margin-top: -70px !important;
+  height: 60px; 
+  float: right; 
+  margin-left: 440px !important; 
+  width: 60px; 
+  border-radius: 50%
+}
+@media(max-width: 700px) {
+  .lojas {
+    margin-top: 60px !important;
+  }
+  .lojas .lojas-slider .testimonial {
+    background-size: 100% 100% !important;
+    height: 100px !important;
+  }
+}
+/*================================================= END LOJAS ================================================= */
+
+/* =============================================== PRODUTOS =============================================== */
+.banner_produtos {
+  background-size: 100% ; 
+  height: 300px; 
+  margin-top: 98px !important;
+}
+@media(max-width: 700px) {
+  .banner_produtos {
+    background-color: red !important;
+    margin-top: 116px !important;
+    background-size: cover;
+    height: 200px; 
+  }
+  .banner_produtos .mt-100 {
+    margin-top: 50px !important;
+  }
+}
+/* =============================================== END PRODUTOS =============================================== */
+
+
+
+/* =============================================== RECRUTAMENTO =============================================== */
+@media(max-width: 700px) {
+  .recrutamento_form,
+  .recrutamento_form form, 
+  .recrutamento_title {
+    padding: 0px !important;
+  }
+  .recrutamento_title {
+    margin-bottom: 10px !important;
+  }
+}
+/* =============================================== END RECRUTAMENTO =============================================== */
+
+
+/* =============================================== SERVIÇOS =============================================== */
+.banner_servicos .servicos_section{
+  height: 350px;
+}
+.servicos_seccao_img {
+  background-size: cover;
+}
+.servicos_descricao {
+  height: 350px !important;
+}
+.sobre_servicos {
+  margin-top: -22px;
+}
+.sobre_servicos_item img {
+  width: 30%;
+}
+.servicos_publicidade .testimonial{
+  background-size: cover;
+  height: 250px;
+}
 .servicos .nav-link {
   color: #000;
 }
-
-.nav-link.active {
-  color: white !important;
-  background: -webkit-gradient(linear,
-          right top,
-          left bottom,
-          from(#32dbc7),
-          to(#0960aa)) !important;
+@media(max-width: 700px) {
+  .servicos_publicidade {
+    margin-top: -80px;
+  }
+  .servicos_publicidade .testimonial{
+    background-size: 100% 100% !important;
+    height: 100px !important;
+  }
 }
-/* END SERVIÇOS */
+/* =============================================== END SERVIÇOS =============================================== */
+
+
+
+
+
+/* ===============================================CONTACTOS=============================================== */
+
+/* Icons Sociais */
+.icons-sociais .icon-border{
+  width: 40px; height: 40px !important; border-radius: 50% !important;
+}
+
+/* =============================================== END CONTACTOS =============================================== */

@@ -186,10 +186,10 @@ jQuery(document).ready(function ($) {
 					margin: 0,
 					stagePadding: 0,
 					nav: true,
-					items: 4
+					items: 1
 				},
 				1200: {
-					margin: 0,
+					margin: 40,
 					stagePadding: 0,
 					nav: true,
 					items: 4
