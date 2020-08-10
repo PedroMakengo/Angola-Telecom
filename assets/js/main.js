@@ -122,8 +122,6 @@ jQuery(document).ready(function ($) {
 	};
 	// siteSliderRange();
 
-
-
 	var siteCarousel = function () {
 		if ($('.nonloop-block-13').length > 0) {
 			$('.nonloop-block-13').owlCarousel({
@@ -193,6 +191,35 @@ jQuery(document).ready(function ($) {
 					stagePadding: 0,
 					nav: true,
 					items: 4
+				}
+			}
+		});
+		$('.nossos_produtos_slider').owlCarousel({
+			center: false,
+			items: 1,
+			loop: true,
+			stagePadding: 0,
+			margin: 0,
+			autoplay: true,
+			pauseOnHover: false,
+			autoplayTimeout: 6000,
+			responsive: {
+				600: {
+					margin: 0,
+					nav: false,
+					items: 2
+				},
+				1000: {
+					margin: 0,
+					stagePadding: 0,
+					nav: false,
+					items: 1
+				},
+				1200: {
+					margin: 20,
+					stagePadding: 0,
+					nav: false,
+					items: 3
 				}
 			}
 		});
